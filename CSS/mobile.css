@@ -1,0 +1,103 @@
+@media only screen and (max-width: 600px) {
+    #sidebar {
+      display:none;
+    }
+    .nav{
+        display: none;
+    }
+    #mobnav, .slideNav{
+        display: flex;
+        top:0;
+        align-items: center;
+    }
+
+    .slideNav{
+        padding: 0 40px;
+        top:-100px;
+        overflow: hidden;
+        width:100%;
+        background-color: black;
+        color:white;
+        z-index: 999;
+        display: flex;
+    }
+    .fa{
+        padding: 20px;
+    }
+
+    #mobnav h1{
+        font-size: 25px;
+    }
+
+    .toggle div{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    .slideNav .toggle div{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    
+    .slideNav .toggle div:first-child{
+        transform: rotateZ(40deg);
+    }
+    .slideNav .toggle div:last-child{
+        transform: rotateZ(-40deg) translate(5px, -5px);
+    }
+
+    .mobsidebar{
+        display:flex;
+        position: fixed;
+        height: 100vh;
+        width:0;
+        overflow: hidden;
+        padding: 10px  0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+    }
+    .mobsidebar ul li a{
+        text-align: center;
+        display: block;
+        padding: 10px 0;
+        margin: 10px 0;
+        font-size: 30px;
+        color: white;
+    }
+
+    .background{
+    padding-left: 20px;
+    }
+
+    .background h1{
+        font-size: 60px;
+    }
+    #about div{
+        width:100% !important;
+    }
+    
+    #about div:last-child{
+        padding-left: 0;
+        margin-top: -100px;
+
+    }
+    #about img:last-child{
+    display: none;
+    }
+    .map{
+        width:100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+
+    footer > .flexRow, #contact{
+        padding: 20px;
+    }
+  }
